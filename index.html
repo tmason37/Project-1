@@ -5,58 +5,24 @@
 <title>Belshay House</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-	body, html {
-		margin: 0;
-		padding: 0;
-		height: 100%;		
-	}
-	
-.background-top {
-	background-image: url("images/book3waterbackground.png");
-	background-size: cover;
-	background-position: center;
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	z-index: -2;
-	}
-
-.background-bottom {
-	background-image: url("images/bottombackground.png");
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: bottom center;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 2200px;
-	height: 500px;
-	z-index: -1;
-			
-	}
-	
-</style>
-</head>
-<body>
-	
-	<div class="background-top"></div>
-	<div class="background-bottom"></div>
-	
-</body>
-</html>
-<style>
-	* {
-		box-sizing:border-box;
+	*{ 
+	box-sizing: border-box;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
 	}
 	body {
 		margin: 0;
+		font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
 	}
+
+</style>
+</head>
+
+<head>
+<style>
 	
 .header{
 		background-color:blueviolet;
-		padding: 20px;
+		padding: 30px;
 		text-align: center;
 	}
 .topnav {
@@ -65,12 +31,12 @@
 	}
 
 .topnav a {
-		float: none
+		float: left
 		display: block;
-		color:blueviolet
-		text-align: active;
-		padding: 100px 130px;
-		text-decoration:none;
+		color: black;
+		text-align: center;
+		padding: 200px 125px;
+		text-decoration-style: solid;
 	}
 
 .topnav a:hover{
@@ -79,32 +45,21 @@
 	}
 
 	
-.column{
-	float: right;
-	width: 100%;
-	padding-left: 1700px;
-}
-.row::after {
-	content:"";
-	display: table;
-	clear: both;
-}
+.content {
+	background-color:darkcyan;
+	text-align: center
+	padding: 10px;
+	height: 1200px;		
+	}
 
-@media screen and {max-width:600px){
-		.column {
-			width: 100%
-		}
-}
+.footer {
+	background-color: coral;
+	padding-bottom: 18px
+	text-align: center;
+	}
 	
 </style>
 </head>
-<body>
-
-<div class="header">
-
-	<h1>Ta'Shay Mason</h1>
-	<h2>Inspiring Through Storytelling</h2>
-</div>
 
 <div class="topnav">
 
@@ -116,16 +71,34 @@
 	<a href="#media">Media</a>
 	<a href="#contact">Contact</a>
 </div>
+	
+<div class="header">
 
-<div class="row">
-	<div class="column">
-		<img src="images/JB.png" alt="Jazmine and Bella" style="width:800px: height:800px">
-		
+	<h1>Ta'Shay Mason</h1>
+	<h2>Inspiring Through Storytelling</h2>
 </div>
 
-	</div>
+	
+<body>
+	<div class="center">
+	<picture>
+		<source media="(min-width: 650px)" srcset="images/JB.png">
+	    <source media="(min-width: 465px)" srcset="images/griefhaslayers.png">
+		<source media="(min-width: 465px)" srcset="images/Book1.png">
+	    <source media="(min-width: 465px)" srcset="images/Book2.png">
+		<source media="(min-width: 465px)" srcset="images/Book3.png">
+		<source media="(min-width: 465px)" srcset="images/Book4.png">
+	</picture>
 
-<footer>&copy;<b>Belshay House LLC, 2025</b></footer>
+		
+</div>
+	
+
+<div class="footer">
+<footer>&copy;<b>Belshay House LLC, 2025</b>
+	
+	
+</footer>
 	
 </div>
 </body>
