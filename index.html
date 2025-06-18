@@ -5,6 +5,48 @@
 <title>Belshay House</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+	body, html {
+		margin: 0;
+		padding: 0;
+		height: 100%;		
+	}
+	
+.background-top {
+	background-image: url("images/book3waterbackground.png");
+	background-size: cover;
+	background-position: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -2;
+	}
+
+.background-bottom {
+	background-image: url("images/bottombackground.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 2200px;
+	height: 500px;
+	z-index: -1;
+			
+	}
+	
+</style>
+</head>
+<body>
+	
+	<div class="background-top"></div>
+	<div class="background-bottom"></div>
+	
+</body>
+</html>
+<style>
 	* {
 		box-sizing:border-box;
 	}
@@ -74,36 +116,6 @@
 	<a href="#media">Media</a>
 	<a href="#contact">Contact</a>
 </div>
-
-<html>
-<head>
-<style>
-	html { 
-	background:url()no-repeat center fixed;
-	background-size: cover;	
-	}
-	body{
-		color: white;
-	}
-</style>	
-</head>
-</html>
-
-<html>
-<head>
-<style>
-	html {
-	background: url("images/backyard.png");
-	background-repeat: no-repeat
-	background-position: bottom;
-	margin-bottom: 200px;
-	background-attachment: fixed;
-	padding-bottom: 10px;
-	background-size: 2185px, 100px, auto;
-	}
-</style>	
-</head>
-</html>	
 
 <div class="row">
 	<div class="column">
