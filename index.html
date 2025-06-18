@@ -3,33 +3,118 @@
 <head>
 <meta charset="utf-8">
 <title>Belshay House</title>
-</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-	#container{width:900px; background-color: cadetblue; height:900px; margin:0 auto;
-		
+	* {
+		box-sizing:border-box;
+	}
+	body {
+		margin: 0;
 	}
 	
-	</style>
+.header{
+		background-color:blueviolet;
+		padding: 20px;
+		text-align: center;
+	}
+.topnav {
+		overflow:hidden;
+		background-color:coral;
+	}
 
+.topnav a {
+		float: none
+		display: block;
+		color:blueviolet
+		text-align: active;
+		padding: 100px 130px;
+		text-decoration:none;
+	}
+
+.topnav a:hover{
+		background-color:cadetblue;
+		color:black;
+	}
+
+	
+.column{
+	float: right;
+	width: 100%;
+	padding-left: 1700px;
+}
+.row::after {
+	content:"";
+	display: table;
+	clear: both;
+}
+
+@media screen and {max-width:600px){
+		.column {
+			width: 100%
+		}
+}
+	
+</style>
+</head>
 <body>
-	<div id="container" >
-	<header><h1>Ta'Shay Mason</h1></header>
-		<h3><i>Join Jazmine as she learns how to navigate her grief</i></h3>
-	<nav class="vertical-nav">
-		<ul>
-		<li><a href="#">Home</a></li>
-	    <li><a href="#">About</a></li>	
-		<li><a href="#">Books</a></li>	
-		<li><a href="#">Gallery</a></li>
-		<li><a href="#">Contact</a></li>
-		<li><a href="#">Blog</a></li>
-		</ul>
-				
-		</nav>
-	<main><img src="images/JB.png" alt="Jazmine and Bella" style="width:150px; height:200px"></main>
-		<img src="images/Book1.png" alt="But i don't want to say GOODBYE!" style="width:200px; height:200px">
-		<img src="images/Book2.png" alt="It's Ok To Be Happy!" style="width:200px; height:200px">
-		<img src="images/Book3.png" alt="Let's Celebrate!" style="width:200px; height:200px">
-	<footer> &copy; <b>Belshay House</b></footer>	
+
+<div class="header">
+
+	<h1>Ta'Shay Mason</h1>
+	<h2>Inspiring Through Storytelling</h2>
+</div>
+
+<div class="topnav">
+
+	<a href="#books">Books</a>
+	<a href="#author">Author</a>
+	<a href="#blog">Blog</a>
+	<a href="#resources">Resources</a>
+	<a href="#gallery">Gallery</a>
+	<a href="#media">Media</a>
+	<a href="#contact">Contact</a>
+</div>
+
+<html>
+<head>
+<style>
+	html { 
+	background:url()no-repeat center fixed;
+	background-size: cover;	
+	}
+	body{
+		color: white;
+	}
+</style>	
+</head>
+</html>
+
+<html>
+<head>
+<style>
+	html {
+	background: url("images/backyard.png");
+	background-repeat: no-repeat
+	background-position: bottom;
+	margin-bottom: 200px;
+	background-attachment: fixed;
+	padding-bottom: 10px;
+	background-size: 2185px, 100px, auto;
+	}
+</style>	
+</head>
+</html>	
+
+<div class="row">
+	<div class="column">
+		<img src="images/JB.png" alt="Jazmine and Bella" style="width:800px: height:800px">
+		
+</div>
+
+	</div>
+
+<footer>&copy;<b>Belshay House LLC, 2025</b></footer>
+	
+</div>
 </body>
 </html>
